@@ -1,32 +1,33 @@
 /* Generales */
 
 @font-face {
-	font-family: 'HKGrotesk';
-	src: url('font/HKGrotesk-Regular.otf') format('otf');
+	font-family: 'OpenSans';
+	src: url('assets/fonts/OpenSans_SemiCondensed-Regular.ttf') format('ttf');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'HKGrotesk';
-	src: url('font/HKGrotesk-RegularLegacy.otf') format('otf');
+	font-family: 'OpenSans';
+	src: url('assets/fonts/HKGrotesk-RegularLegacy.otf') format('ttf');
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'HKGrotesk';
-	src: url('font/HKGrotesk-Italic.otf') format('otf');
+	font-family: 'OpenSans';
+	src: url('assets/fonts/HKGrotesk-Italic.otf') format('ttf');
 	font-weight: normal;
 	font-style: italic;
 }
 
 @font-face {
-	font-family: 'HKGrotesk';
-	src: url('font/HKGrotesk-BoldLegacyItalic.otf') format('otf');
+	font-family: 'OpenSans';
+	src: url('assets/fonts/HKGrotesk-BoldLegacyItalic.otf') format('ttf');
 	font-weight: bold;
 	font-style: italic;
 }
+
 
 * {
     padding: 0;
@@ -85,7 +86,7 @@ li {
     min-width: 200px;
 }
 
-.header-superior>figure>svg {
+.header-superior>figure>a>svg {
     display: flex;
     flex-wrap: wrap;
     min-width: 200px;
@@ -190,7 +191,6 @@ li {
     margin-top: 4em;
     min-width: 170px;
 }
-
 
 /* media query header bottom margin device-width: 600px */
 

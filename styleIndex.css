@@ -102,7 +102,7 @@
     border-radius: 20px;
     justify-content: center;
     align-items: center;
-    padding: 1px 220px;
+    padding: 2px 250px;
     margin: 2em 12em;
     background-color: #F5F4F4;
 }
@@ -156,7 +156,11 @@
     border-radius: 20px;
     min-width: 200px;
     box-shadow: 1px 1px 5px;
-    padding: 4em 9em 2em 9em;
+    padding: 4em 7em 4em 7em;
+}
+
+.actGeneral:nth-child(odd) .firstImage  {
+    margin-right: 120px;
 }
 
 .firstText {
@@ -167,7 +171,7 @@
 .firstText>h4 {
     margin-bottom: 10px;
     min-width: 100px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -185,6 +189,7 @@
     font-size: 12px;
     margin-top: 120px;
     color: #161718;
+    font-weight: bold;
 }
 
 .firstText>a:hover {
@@ -196,6 +201,7 @@
 .firstImage {
     flex: 2;
     width: 420px;
+    margin-right: 50px;
 }
 
 @media screen and (max-width: 600px) {
@@ -234,6 +240,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px 30px;
+    margin-bottom: 20px;
 }
 
 .botonActividades>a {
@@ -637,6 +644,7 @@ form button:hover {
     border-radius: 20px;
     border: 1px solid #EAEAEA;
     font-size: 12px;
+    font-weight: bold;
 }
 
 .footFour>a:hover {
