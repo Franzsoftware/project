@@ -14,7 +14,7 @@
     <body>
         <header>
             <div class="header">
-                <div class="header-superior">
+                <div id="arriba" class="header-superior">
                     <figure>
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-universe" width="54" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -27,10 +27,11 @@
                     </figure>
                     <nav>
                         <ul>
-                            <li><a href="#" title="Nosotros">Inicio</a></li>
-                            <li><a href="#" title="Nosotros">Nosotros</a></li>
-                            <li><a href="#" title="Actividades">Actividades</a></li>
-                            <li><a href="#" title="Contacto">Contacto</a></li>
+                            <li><a href="index.html" title="Nosotros">Inicio</a></li>
+                            <li><a href="#nosotros" title="Nosotros">Nosotros</a></li>
+                            <li><a href="#actividades" title="Actividades">Actividades</a></li>
+                            <li><a href="#servicios" title="Actividades">Servicios</a></li>
+                            <li><a href="#contacto" title="Contacto">Contacto</a></li>
                         </ul>
                     </nav>
                     <div class="header-superior-botones">
@@ -58,25 +59,25 @@
                             <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
                             <div class="slider-botones">
                                 <div class="boton1">
-                                    <a href="#" target="_blank" title="Actividades" >Actividades</a>
+                                    <a href="#actividades" target="_blank" title="Actividades">Actividades</a>
                                 </div>
                                 <div class="boton2">
-                                    <a href="#" target="_blank" title="Contacto" >Contacto</a>
+                                    <a href="#contacto" target="_blank" title="Contacto">Contacto</a>
                                 </div>
                             </div>
                         </div>
                         <figure>
-                            <img src="assets/images/man.png" alt="" title="" />
+                            <img src="assets/images/man.png" alt="Imagen header hombre" title="Imagen portada" />
                         </figure>
                     </div>
                 </div>
             </div>
         </header>
         <main>
-            <div class="history-general">
+            <div id="nosotros" class="history-general">
                 <div class="history-first">
                     <figure class="one">
-                        <img src="assets/images/mainHistory/number.png" alt="" title="" >
+                        <img src="assets/images/mainHistory/number.png" alt="Imagen número" title="Número">
                     </figure>
                 </div>
 
@@ -87,34 +88,34 @@
 
                 <div class="history-third">
                     <figure class="third">
-                        <img src="assets/images/mainHistory/code.png" alt="" title="" >
+                        <img src="assets/images/mainHistory/code.png" alt="Imagen de código" title="Código">
                     </figure>
                 </div>
 
                 <div class="history-fourth">
                     <figure class="fourth">
-                        <img src="assets/images/mainHistory/content.png" alt="" title="" >
+                        <img src="assets/images/mainHistory/content.png" alt="Imagen de contenido" title="Contenido">
                     </figure>
                 </div>
             </div>
 
-            <div class="activities">
+            <div id="actividades" class="activities">
                 <div  class="actText">
                     <h2>Actividades</h2>
                     <h3>¿Dónde puedo conseguirlo?</h3>
                     <p>Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás</p>
                 </div>
                
-                <div  id="a"></div>
+                <div id="a"></div>
 
                 <div class="botonActividades">
-                    <a href="#" title="Contacto">Contacto</a>
+                    <a href="#contacto" title="Contacto">Contacto</a>
                 </div>
             </div>
 
             <div class="information">
                 <div class="infoText">
-                    <p>I am Richard Brin, a Developer with 05   <span class="color">  years experience sketching,building & coaching.</span>  I love    fun UI Developer, <span class="color">  collaboration and </span> making <span class="color">  helpful products that connect </span> people.</p>
+                    <p>I am Richard Brin, a Developer with 05 <span class="color">years experience sketching,building & coaching.</span>  I love fun UI Developer, <span class="color">collaboration and </span> making <span class="color">helpful products that connect </span> people.</p>
                 </div>
             </div>
 
@@ -122,11 +123,11 @@
                 <div class="contactText">
                     <h3>Professional Skill</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.</p>
-                    <a href="#" alt="" title="">Download Resume</a>
+                    <a href="#" alt="Download" title="Download">Download Resume</a>
                 </div>
            </div> 
 
-           <div class="servicies">
+           <div id="servicios" class="servicies">
                <div class="firstService">
                     <div class="firstO">
                         <h4>Mobile App</h4>
@@ -149,7 +150,7 @@
                </div> 
            </div>
 
-           <div class="form">
+           <div id="contacto" class="form">
                 <div class="formContent">
                     <div class="formText">
                         <p>Contacto</p>
@@ -200,7 +201,7 @@
                         <h4>Thanks for Scrolling</h4>
                     </div>
                     <p>© 2022 by Richard Brin.</p>
-                    <a href="#" title="Lets chat">Lets Chat</a>
+                    <a href="#arriba" title="Subir arriba">Subir arriba</a>
                 </div>
             </div>
         </footer>
@@ -282,175 +283,6 @@
                 alert('Ha ocurrido un error, intenta visualizar el contenido en unos instantes')
 
             })
-          
-            /*
-
-            const BASE_URL_IMAGE = 'https://mdlbiyrwccyoblevhoid.supabase.co/storage/v1/object/sign/assets';
-            
-            function formatterAPI (data) {
-                    let formatterArray = []
-                    data.forEach(item => {
-                        formatterArray.push ({
-                            title: item.title,
-                            description: item.description,
-                            textButton: item.textButton,
-                            img: item.img
-                            backGround: item.backGround
-                        })
-                    })
-                    return formatterArray 
-                }
-        
-            let sectionActivity = document.getElementById('a'); 
-            
-            async function getActivity() {
-            
-                let activities = []
-                
-                await fetch('https://mdlbiyrwccyoblevhoid.supabase.co/rest/v1/francesc_activities?select=*', {
-                    method:'GET',
-                    mode: 'cors',
-                    headers: {
-                        'Content-Type': 'aplication/json',
-                        'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1kbGJpeXJ3Y2N5b2JsZXZob2lkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTA5NjA3MDgsImV4cCI6MjAyNjUzNjcwOH0.RNheTQLsl5dmh4406McR8ttAmwzfoxnEiDo4gutMCbA',
-                        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1kbGJpeXJ3Y2N5b2JsZXZob2lkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTA5NjA3MDgsImV4cCI6MjAyNjUzNjcwOH0.RNheTQLsl5dmh4406McR8ttAmwzfoxnEiDo4gutMCbA',
-                    },
-                })
-               
-                .then(async (response) => {
-                    if (response.status === 200)  {
-                        await response.json()
-                            .then((r) => {
-                                for (let i = 0; i < r.length; i++) {
-                                    activities.push({title: r[i].title}, {title: r[i].description}, {title: r[i].textButton}, {title: r[i].img})
-                        
-                                }      
-                            })
-                            .catch(() => {})
-                        
-            }})
-                
-                .catch(() => {})
-            
-                for (let i= 0; i < activities.length; i++) {
-                  
-                    sectionActivity.innerHTML += 
-
-                    `   
-                        <div class="actGeneral" style="background-color:${activities[i].backgroundColor}; background-image:${activities[i].backgroundImage}; flex-direction: ${(i % 2 == 0) ? 'row-reverse':'row'};">
-                            <div class="firstText">
-                                <h4>${activities[i].title}</h4>
-                                <p>${activities[i].description}</p>
-                                <a href="#" title="${activities[i].textButton}">${activities[i].textButton}</a>
-                            </div>
-                            <div class="firstImage">
-                                <figure>
-                                    <img src="${activities[i].img}" alt="" title="" />
-                                </figure>
-                            </div>
-                        </div>
-                     `
-                                         
-                }    
-                } 
-
-                getActivity() */
-
-/*
-                , {title: r[i].description}, {title: r[i].textButton}, {title: r[i].img}
-                , `<li>${activities[i].textButton}</li>`,`<li>${activities[i].img}</li>` */
-                
-                /*  */
-
-                //
-               /* <li>${activities[i].description}</li>` + `<li>${activities[i].textButton}</li>` + `<li>${activities[i].images} */
-
-               // cuando se acabe de leer la función, se leera por ella sola.  
-
-               
-
-                // BASE_URL_IMAGE: https://mdlbiyrwccyoblevhoid.supabase.co/storage/v1/object/sign/assets
-
-            /* hemos creado un arry con 2 objetos diferentes */
-           /*
-            let activities = [  
-                    {
-                        title: 'Actividad de Ioga', 
-                        text: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.',
-                        boton: 'Apuntarse a Ioga', 
-                        botonUrl: '#', 
-                        backgroundColor: '#E0E8EA',
-                        image: 'assets/images/activities/actOne.svg', 
-                    },
-
-                    {
-                        title: 'Actividad de Baile', 
-                        text: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.',
-                        boton: 'Apuntarse a Baile', 
-                        botonUrl: '#', 
-                        backgroundColor: '#ECE6E7',
-                        image: 'assets/images/activities/actTwo.svg', 
-                    },
-
-                    {
-                        title: 'Actividad de Teatro', 
-                        text: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.',
-                        boton: 'Apuntarse a Teatro', 
-                        botonUrl: '#', 
-                        backgroundColor: '#EBE1E6',
-                        image: 'assets/images/activities/actThree.svg', 
-                    },
-            
-                    {
-                        title: 'Actividad de Informática', 
-                        text: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.',
-                        boton: 'Apuntarse a Informática', 
-                        botonUrl: '#', 
-                        backgroundColor: '#EEE6E1',
-                        image: 'assets/images/activities/actFour.svg', 
-                    }
-                ] */
-  
-            /* 2 formas para declarar funciones
-
-            function name () {
-            
-            }
-
-            () => {
-           
-            } 
-            
-            */
-
-            /* hemos creado un espacio de memoria con un id y guardamos todo el contenido que hay dentro de este id 
-
-           
-            let sectionActivity = document.getElementById('a'); */
-
-            /* he creado un bucle */        
-            
-             /*
-            for (let i = 0; i < activities.length; i++) {
-                
-                // let flexDirection = (i % 2 == 0) ? 'row-reverse':'row';
-
-                sectionActivity.innerHTML += 
-                `   
-                <div class="actGeneral" style="background-color:${activities[i].backgroundColor}; background-image:${activities[i].backgroundImage}; flex-direction: ${(i % 2 == 0) ? 'row-reverse':'row'};">
-                    <div class="firstText">
-                        <h4>${activities[i].title}</h4>
-                        <p>${activities[i].text}</p>
-                        <a href="#" title="${activities[i].boton}">${activities[i].boton}</a>
-                    </div>
-                    <div class="firstImage">
-                        <figure>
-                            <img src="${activities[i].image}" alt="" title="" />
-                        </figure>
-                    </div>
-                </div>
-                `;   
-            } */
 
         </script>
     </body>    
