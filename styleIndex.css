@@ -590,6 +590,14 @@ form button:hover {
     flex: 1;
 }
 
+.footTwo>p>a{
+    color: #263238;
+}
+
+.footTwo>p>a:hover{
+    color: #4E4E4E;
+}
+
 .footThree {
     flex: 1;
 }
