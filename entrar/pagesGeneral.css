@@ -1,0 +1,226 @@
+/* Generales */
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('assets/fonts/OpenSans_SemiCondensed-Regular.ttf') format('ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('assets/fonts/HKGrotesk-RegularLegacy.otf') format('ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('assets/fonts/HKGrotesk-Italic.otf') format('ttf');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('assets/fonts/HKGrotesk-BoldLegacyItalic.otf') format('ttf');
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+figure>img {
+	width: 100%;
+	margin: auto;
+}
+
+p, h1, h2, h3, h4, li, label, button, a, input {
+	font-family: OpenSans, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+/* header */
+
+.header {
+    padding: 2em;
+    flex-wrap: wrap;
+    background-image: url("../assets/images/entrar/colorPink.png"), url("../assets/images/entrar/colorBlue.png");
+    background-repeat: no-repeat;
+    background-position: left, right;
+    background-size: 860px;
+    background-color: #F1FDFB;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+
+    }
+}
+
+.header-superior {
+    display: flex;
+    padding: 1em 0em 0px 0em;
+    flex-wrap: wrap;
+}
+
+/* header logo */
+
+.header-superior>figure {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 200px;
+}
+
+.header-superior>figure>a>svg {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 200px;
+    text-align: left;
+    justify-content: left;
+}
+
+.header-superior>figure>a {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 200px;
+    text-align: left;
+    justify-content: left;
+
+}
+
+/* media query logo device max-width: 950px */
+
+@media screen and (max-width: 950px) { 
+    .header-superior>figure  {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+
+}}
+
+/* nav */
+
+.header-superior>nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3;
+    justify-content: center;
+    min-width: 300px;
+}
+
+/* media query nav margin up */
+
+@media screen and (max-width: 600px) {
+    .header-superior>nav {
+        margin-top: 2%;
+    }
+}
+
+.header-superior>nav>ul {
+    display: flex; 
+    flex: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-superior>nav>ul>li>a {
+    font-weight: bold;
+    font-size: 14px;
+    color: #4E4E4E;
+}
+
+.header-superior>nav>ul>li>a:hover {
+    color: #00adcc;
+}
+
+/* header boton entrar y registrar */
+
+.header-superior-botones {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-width: 290px;
+}
+
+/* media query botons margin up */
+
+@media screen and (max-width: 600px) {
+    .header-superior-botones {
+        margin-top: 2em;
+    }
+}
+
+.header-superior-botones>a {
+    border-radius: 30px;
+    color: #414141;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #fff;
+    margin: 0 0em;
+    padding: 1em 0em;
+    flex: 1;
+    min-width: 80px;
+}
+
+.header-superior-botones>a:hover {
+    color: #ffffff;
+    background-color: #414141;
+    transition: 0.5s;
+}
+
+.header-superior-botones>a>svg {
+    margin-left: 0.5em;
+}
+
+/* Second section header */
+
+.header-inferior {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 5em 1em 5em;
+    margin-top: 4em;
+    min-width: 170px;
+    background-image: url("../assets/images/entrar/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 380px;
+}
+
+.header-inferior-first {
+    padding: 4em 0;
+}
+
+.header-inferior-first>h1 {
+    font-size: 40px;
+}
+
+
+/* media query header bottom margin device-width: 600px */
+
+@media screen and (max-width:600px) {
+    .header-inferior {
+        padding: 0;
+    }
+}
+
+/* FIN DE HEADER */
