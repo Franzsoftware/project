@@ -22,7 +22,7 @@ form {
     min-width: 200px;
 }
 
-form input[type=text] {
+form input[type=text], input[type=password], input[type=email] {
     border-radius: 72px;
     padding: 20px 80px 10px 30px;
     margin: 10px 0;
@@ -48,7 +48,7 @@ form>a:hover {
     color: #397c71;
 }
 
-form input[type=text]::placeholder {
+form input[type=text]::placeholder, input[type=password]::placeholder, input[type=email]::placeholder {
    color: #BDBDBD;
    font-weight: 500;
 }
