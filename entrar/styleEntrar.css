@@ -32,14 +32,11 @@ form input[type=text] {
 @media screen and (max-width: 600px) {
     .forms {
         margin: 80px 90px;
-
     }
    
     form input[type=text] {
         padding: 20px 0px 10px 30px;
-
     }
-    
 }
 
 form>a {
