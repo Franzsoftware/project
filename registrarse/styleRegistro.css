@@ -1,0 +1,95 @@
+/* Form */
+
+.forms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    background-color: #F2F6F7;
+    background-image: url("../assets/images/entrar/patternLeft.png"), url("../assets/images/entrar/patternRight.png");
+    background-position: left bottom, right top;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    margin: 80px 290px;
+    padding: 40px 20px;
+    border-radius: 20px;
+}
+
+form {
+    padding: 20px 20px;
+    margin: 20px 20px;
+    min-width: 200px;
+}
+
+form input[type=text] {
+    border-radius: 72px;
+    padding: 20px 80px 10px 30px;
+    margin: 10px 0;
+    border: none;
+}
+
+@media screen and (max-width: 600px) {
+    .forms {
+        margin: 80px 90px;
+    }
+   
+    form input[type=text] {
+        padding: 20px 0px 10px 30px;
+    }
+}
+
+form>a {
+    font-size: 12px;
+    color: #444444;
+}
+
+form>a:hover {
+    color: #397c71;
+}
+
+form input[type=text]::placeholder {
+   color: #BDBDBD;
+   font-weight: 500;
+}
+
+.check {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.check>p {
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+.button {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.button button {
+    background:#263238;
+    color: #FFFFFF;
+    border-radius: 72px;
+    border: none;
+    padding: 15px 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.button button:hover{
+    background:#ffff;
+    color: #263238;
+    border-radius: 72px;
+    border: none;
+    padding: 15px 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
