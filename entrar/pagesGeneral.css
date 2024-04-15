@@ -28,7 +28,6 @@
 	font-style: italic;
 }
 
-
 * {
     padding: 0;
     margin: 0;
@@ -80,6 +79,7 @@ li {
 .header-superior>figure {
     display: flex;
     flex-wrap: wrap;
+    flex: 1;
     min-width: 200px;
 }
 
@@ -97,7 +97,6 @@ li {
     min-width: 200px;
     text-align: left;
     justify-content: left;
-
 }
 
 /* media query logo device max-width: 950px */
@@ -116,7 +115,7 @@ li {
 .header-superior>nav {
     display: flex;
     flex-wrap: wrap;
-    flex: 3;
+    flex: 2;
     justify-content: center;
     min-width: 300px;
 }
@@ -174,7 +173,7 @@ li {
     font-weight: bold;
     font-size: 14px;
     background-color: #fff;
-    margin: 0 0em;
+    margin: 0 4em;
     padding: 1em 0em;
     flex: 1;
     min-width: 80px;
@@ -214,12 +213,12 @@ li {
     font-size: 40px;
 }
 
-
 /* media query header bottom margin device-width: 600px */
 
 @media screen and (max-width:600px) {
     .header-inferior {
         padding: 0;
+        background-size: 240px;
     }
 }
 
