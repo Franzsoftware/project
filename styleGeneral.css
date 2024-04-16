@@ -73,7 +73,7 @@ li {
 
 .header-superior {
     display: flex;
-    padding: 1em;
+    padding: 1em 0em 0px 0em;
     flex-wrap: wrap;
 }
 
@@ -109,7 +109,7 @@ li {
 .header-superior>nav {
     display: flex;
     flex-wrap: wrap;
-    flex: 3;
+    flex: 2;
     justify-content: center;
     min-width: 300px;
 }
@@ -132,7 +132,7 @@ li {
 
 .header-superior>nav>ul>li>a {
     font-weight: bold;
-    font-size: 0.98vw + 15px;
+    font-size: 14px;
     color: #4E4E4E;
 }
 

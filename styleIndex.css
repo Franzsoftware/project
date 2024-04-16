@@ -102,22 +102,17 @@
     border-radius: 20px;
     justify-content: center;
     align-items: center;
+    min-width: 200px;
     padding: 2px 250px;
     margin: 2em 12em;
     background-color: #F5F4F4;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1200px) {
-    .activities {
-        padding: 1px 220px;
-        margin: 2em 12em;
-    }
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 200px) and (max-width: 1200px) {
     .activities {
         padding: 1px 20px;
-        margin: 2em 1em;
+        margin: 2em 2em;
+        min-width: 0px;
     }
 }
 
@@ -141,7 +136,7 @@
     padding: 0 10em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 200px) and (max-width: 1200px) {
     .actText>p {
         padding: 0 0em;
     }
@@ -151,6 +146,7 @@
 
 .actGeneral {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 2em;
     margin: 2em 2em;
     border-radius: 20px;
@@ -163,9 +159,14 @@
     margin-right: 120px;
 }
 
+.actGeneral:nth-child(even) .firstImage  {
+    margin-left: 120px;
+}
+
 .firstText {
     flex: 3;
     padding: 25px 5px;
+    text-align: center;
 }
 
 .firstText>h4 {
@@ -200,26 +201,25 @@
 
 .firstImage {
     flex: 2;
-    width: 420px;
+    width: 440px;
     margin-right: 50px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 200px) and (max-width: 1200px) {
     .actGeneral {
         min-width: 100px;
-        padding: 4em 9em 2em 9em;
-        margin: 12em 12em;
+        padding: 4em 1em 2em 1em;
+        margin: 2em 2em;
     }
 
     .firstText {
-        flex: 3;
-        min-width: 300px;
-        padding: 125px 225px;
+        min-width: 100px;
+        padding: 2px 2px;
     }
 
     .firstText>h4 {
         margin-bottom: 10px;
-        min-width: 200px;
+        min-width: 100px;
         font-size: 18px;
         font-weight: bold;
     }
@@ -229,6 +229,27 @@
         line-height: 20px;
         padding-right: 10px;
         margin-bottom: 60px;
+    }
+
+    .firstImage  {
+        width: 50px;
+        min-width: 0px;
+        margin-left: 30px;
+        margin-top: 60px;
+    }
+
+    .firstImage figure {
+        width: 150px;
+        min-width: 200px;
+    }
+
+    .firstImage figure img {
+        width: 150px;
+    }
+    
+    .actGeneral:nth-child(even) .firstImage figure {
+        width: 50px;
+        margin-top: 60px;
     }
 }
 
@@ -256,38 +277,6 @@
     background-color: #fff;
     transition: 0.5s;
     box-shadow: 2px 2px 5px #263238;
-}
-
-@media screen and (max-width: 600px) {
-    .actFirst, .actSecond, .actThird, .actFourth {
-        display: block;
-    }
-
-    .columnReverse {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .firstText>p {
-        padding-right: 0px;
-    }
-    .firstText>h4 {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .firstText {
-        padding: 2px 2px;
-    }
-
-    .firstText>a {
-        margin: 20px 10px;
-        margin-left: 40px;
-    }
-
-    .firstImage {
-        margin-top: 40px;
-    }
 }
 
 /* Information section */
@@ -465,8 +454,40 @@
     background-size: 105px;
 }
 
-@media screen and (min-width: 200px) and (max-width: 600px) {
+@media screen and (min-width: 200px) and (max-width: 1200px) {
+    .servicies {
+        padding: 5em 1em;
+        margin: 1em 0;
+    }
     
+    .firstService {
+        padding: 2em 1em;
+    }
+    
+    .secondService {
+        padding: 2em 1em;
+    }
+    
+    .secondService h4 {
+        font-size: 20px;
+        margin-bottom: 0.5em;;
+    }
+    
+    .firstO {
+        padding: 1em 1em;
+    }
+    
+    .firstS {
+        padding: 1em 1em;
+    } 
+    
+    .secondO{
+        padding: 1em 1em;
+    }
+    
+    .secondS {
+        padding: 1em 1em;
+    }
 
 }
 
@@ -550,6 +571,13 @@ form button {
 form button:hover {
     background-color: #ffff;
     color: #263238;
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 1200px) {
+    .form {
+        margin: 1em 1em;
+    }
 }
 
 /* footer */
